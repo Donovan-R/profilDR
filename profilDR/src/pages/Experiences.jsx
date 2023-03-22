@@ -8,7 +8,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper';
+import { EffectCoverflow, Mousewheel, Pagination } from 'swiper';
 import Footer from '../../components/Footer';
 const Experiences = () => {
   return (
@@ -16,11 +16,11 @@ const Experiences = () => {
       <section className='section expSection'>
         <h2>expériences</h2>
         <Swiper
-          loop:true
+          loop={'true'}
           direction='vertical'
           effect={'coverflow'}
           grabCursor={true}
-          // centeredSlides={true}
+          centeredSlides={true}
           slidesPerView={'auto'}
           coverflowEffect={{
             rotate: 50,
@@ -29,13 +29,14 @@ const Experiences = () => {
             modifier: 1,
             slideShadows: true,
           }}
+          controller={Mousewheel}
           pagination={true}
-          modules={[EffectCoverflow, Pagination]}
+          modules={[EffectCoverflow, Pagination, Mousewheel]}
           className='mySwiper'
         >
           <SwiperSlide>
-            <div class='expCard'>
-              <h4 class='expTitle'>
+            <div className='expCard'>
+              <h4 className='expTitle'>
                 Depuis le 11/04/2018 : agent d'exploitation dans un parc de
                 stationnement de la société Indigo
               </h4>
@@ -47,8 +48,8 @@ const Experiences = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div class='expCard'>
-              <h4>
+            <div className='expCard'>
+              <h4 className='expTitle'>
                 De décembre 2015 à avril 2018 : assistant de recherche pour le
                 CNRS (J-Pal Europe)
               </h4>
@@ -63,20 +64,23 @@ const Experiences = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div class='expCard'>
-              <h4>
+            <div className='expCard'>
+              <h4 className='expTitle'>
                 De septembre 2016 à avril 2017: tuteur pédagogique au sein de
                 l'université Lille3
               </h4>
-              <p>
-                Enseignement de matières relevant de la linguistique auprès
-                d'étudiants en première année de licence
-              </p>
+              <ul>
+                {' '}
+                <li>
+                  Enseignement de matières relevant de la linguistique auprès
+                  d'étudiants en première année de licence
+                </li>
+              </ul>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div class='expCard'>
-              <h4>
+            <div className='expCard'>
+              <h4 className='expTitle'>
                 De 2011 à avril 2018: intérimaire pour Kelly-Services et Crit
               </h4>
               <ul>
@@ -86,8 +90,8 @@ const Experiences = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div class='expCard'>
-              <h4>
+            <div className='expCard'>
+              <h4 className='expTitle'>
                 De septembre 2012 à juin 2013: enseignant de français (FLE) à
                 Antananarivo au sein du centre de perfectionnement des officiers
                 (CPO) et de l'école d'état major (EEM)
@@ -106,8 +110,8 @@ const Experiences = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div class='expCard'>
-              <h4>
+            <div className='expCard'>
+              <h4 className='expTitle'>
                 Périodes estivales de 2010, 2011, 2012 et 2013: animateur
                 linguistique (taal-trainer animator) à Courtrai pour l'organisme
                 BLCC Kids, au sein de l'université de la Kulak
@@ -122,20 +126,25 @@ const Experiences = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div class='expCard'>
-              <h3>
+            <div className='expCard'>
+              <h4 className='expTitle'>
                 D'octobre 2010 à juillet 2011: enseignant de français (FLE) à
                 Bucarest au sein de l'académie militaire Carol I et du ministère
                 de la défense
-              </h3>
+              </h4>
+              <ul>
+                <li>Enseignement de la langue française</li>
+                <li>conception pédagogique</li>
+                <li>organisation des épreuves</li>
+              </ul>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div class='expCard'>
-              <h3>
+            <div className='expCard'>
+              <h4 className='expTitle'>
                 Du 16/12/2005 au 15/08/2010: équipier polyvalent en restauration
                 rapide (Quick et KFC)
-              </h3>
+              </h4>
               <ul>
                 <li>Préparation et anticipation des commandes</li>
                 <li>Délégation de tâches aux équipiers</li>

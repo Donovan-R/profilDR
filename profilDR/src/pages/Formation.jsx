@@ -1,6 +1,7 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 import Footer from '../../components/Footer';
+import CloudItem from '../../components/CloudItem';
 
 const Formation = () => {
   return (
@@ -11,6 +12,7 @@ const Formation = () => {
           <Marquee
             pauseOnHover={true}
             gradientColor={[19, 219, 255]}
+            gradientWidth={50}
             speed={70}
           >
             <div className='marqueeCard'>
@@ -42,6 +44,9 @@ const Formation = () => {
           </Marquee>
         </div>
         <h2>compétences</h2>
+        <div>
+          <CloudItem />
+        </div>
       </section>
       <Footer />
     </>

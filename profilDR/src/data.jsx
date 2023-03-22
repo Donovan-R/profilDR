@@ -9,18 +9,18 @@ export const links = [
   },
   {
     id: 2,
+    url: '/projets',
+    text: 'projets',
+  },
+  {
+    id: 3,
     url: '/formation',
     text: 'formation',
   },
   {
-    id: 3,
+    id: 4,
     url: '/experiences',
     text: 'expériences',
-  },
-  {
-    id: 4,
-    url: '/projets',
-    text: 'projets',
   },
 
   // {
