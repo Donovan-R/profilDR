@@ -32,12 +32,21 @@ const Projets = () => {
           </article>{' '}
           <article className='projetCard'>
             <h4>liste de courses</h4>
-            <p>exercice front type todo</p>
+            <p>Exercice front type todo</p>
             <a href='https://liste-courses.netlify.app/' target='_blank'>
               <img src='./src/assets/listeCourses.png' alt='liste de courses' />
             </a>
             <a href='https://liste-courses.netlify.app/' target='_blank'>
               <img src='./src/assets/liste2.png' alt='liste de courses' />
+            </a>
+          </article>{' '}
+          <article className='projetCard'>
+            <h4>liste de courses</h4>
+            <p>
+              Exercice front pour afficher un menu filtrable. Page responsive.{' '}
+            </p>
+            <a href='https://menu-diner.netlify.app/' target='_blank'>
+              <img src='./src/assets/menu.png' alt='menu' />
             </a>
           </article>{' '}
         </div>

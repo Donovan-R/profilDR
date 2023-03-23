@@ -324,6 +324,7 @@ nav {
 
 .projetCard img {
   width: 90%;
+  max-height: 360px;
 }
 
 .formationSection {
@@ -351,15 +352,17 @@ nav {
 }
 
 .skillsDiv {
+  padding: 1rem;
+  margin-bottom: 1rem;
   display: grid;
   place-items: center;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas:
     'a a b c c'
-    'a a b e x'
-    'f g d e x'
-    'f g d h h';
+    'z g b d x'
+    'f f e y x'
+    'f f e y h';
 }
 
 .skillItemA {
@@ -392,13 +395,13 @@ nav {
   width: 50px;
 }
 
-.skillItem p {
+.skillItem h4 {
   display: none;
 }
 
 @media screen and (min-width: 500px) {
-  .skillItem p {
-    display: unset;
+  .skillItem h4 {
+    display: revert;
   }
   .skillItem img {
     height: 80px;
@@ -427,5 +430,5 @@ nav {
 }
 
 .expCard ul {
-  color: #030619;
+  color: var(--clr-primary-6);
 }
